@@ -1,7 +1,7 @@
 {
   "name": "viasat_timer_test",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "home-page": "http://simple-sifu.github.io/notes-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
