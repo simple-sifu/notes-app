@@ -20,7 +20,7 @@ function NotesApp () {
     const addNotesHandler = () => {
 
         // array is used in case more status conditions are needed,
-        // like completed might be added to complete status.
+        // like pending, in progress might be added to active status.
         if (['active'].includes(statusInputValue.toLowerCase())){
             setActiveNotes((curr) =>  [...curr, ...[{
                 title: titleInputValue,
@@ -43,7 +43,6 @@ function NotesApp () {
     }
 
     const selectTabHandler = (tabName) => {
-        console.log("selected Tab =", tabName)
         setSelectedTab(tabName);
     }
 
